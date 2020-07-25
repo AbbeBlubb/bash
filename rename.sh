@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## Delete "00 " from filenames in folder.
-# When downloaded my music files from Google Music, lot's of files starded with "00 <filename>"
+# When downloaded my music files from Google Music, lot's of files started with "00 <filename>"
 
 for file in *.mp3; do
 	if [[ $file == 00[[:space:]]* ]]
