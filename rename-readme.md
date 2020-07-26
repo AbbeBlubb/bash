@@ -1,6 +1,6 @@
 ## rename.sh
 
-Non-recursive first version:
+### Non-recursive first version:
 
 ```
 for file in *.mp3; do
@@ -14,7 +14,7 @@ for file in *.mp3; do
 done
 ```
 
-Recursive second version:
+### Recursive second version:
 
 ```
 find . -type f -name "00[[:space:]]*.mp3" -print0 | while read -d $'\0' filename
@@ -25,7 +25,7 @@ done
 ```
 
 - While-loop executes while find is executing
-- -print0 sets elimeter to null instead of newline, read uses null as delimeter and sets the value to var filename
+- -print0 sets delimeter to null instead of newline, read uses null as delimeter and sets the value to var filename
   - https://explainshell.com/explain?cmd=find%20.%20-type%20f%20-print0
 - Parameter expansion with search and replace in expansion time
   - https://wiki.bash-hackers.org/syntax/pe#search_and_replace
