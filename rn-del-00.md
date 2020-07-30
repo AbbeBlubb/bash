@@ -1,4 +1,7 @@
-## rename.sh
+## rn-del-00.sh
+
+Renames/deletes "00 " from filenames in folders. When downloaded my music files from Google Music, thousands of file names started with "00 fileName".
+
 
 ### Non-recursive first version:
 

@@ -15,5 +15,3 @@ do
     mv "$file" "${SUBSTR} ${file#./}"
     echo -e "Renamed from: ${file#./}\n        to:   $@ ${file}";
 done
-
-# https://ss64.com/bash/find.html
